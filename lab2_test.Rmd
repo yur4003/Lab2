@@ -1,0 +1,21 @@
+---
+title: "lab2_test"
+author: "Yuxiang Ren"
+date: "10/29/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(devtools)
+library(roxygen2)
+```
+
+```{r}
+document()
+setwd('..') 
+install('Lab2')
+```
+
