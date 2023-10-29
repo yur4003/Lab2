@@ -9,7 +9,6 @@
 #' @examples
 
 library(tidyverse)
-library(ggplot2)
 
 load("~/Desktop/wcm_term1/DS1/Lab2/data/DRG_data.RData")
 

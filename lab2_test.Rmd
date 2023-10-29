@@ -28,6 +28,7 @@ library(Lab2)
 # function1()
 # Test function2
 data("DRG_data")
-function2("mean")
+function_2("mean")
+function_2("median")
 ```
 
