@@ -13,9 +13,20 @@ library(devtools)
 library(roxygen2)
 ```
 
-```{r}
-document()
+```{r,message=FALSE}
+
 setwd('..') 
 install('Lab2')
+```
+```{r}
+library(Lab2)
+```
+
+```{r}
+# View(DRG_data)
+# Test function1
+function1()
+# Test function2
+function2()
 ```
 
