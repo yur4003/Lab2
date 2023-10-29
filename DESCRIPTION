@@ -2,10 +2,13 @@ Package: Lab2
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Xintong Cao, Yuxiang Ren, Yijia Sun
+Maintainer: The package maintainer <yur4003@med.cornell.edu>
+Description: This package includes 2 functions. The function1 makes  a boxplot of payments by DRG code.
+    The function2 calculates statistics over all of the DRG codes for average Medicare payments.
+    The package contains a database include hospital-specific charges for more than 3,000 U.S. hospitals that receive Medicare Inpatient Prospective Payment System (IPPS) payments for Fiscal Year (FY) 2011
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+Depends: ggplot2
+RoxygenNote: 7.2.3
