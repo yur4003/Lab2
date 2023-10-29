@@ -1,25 +1,29 @@
 # Function1
-#' function1
-#' Make a boxplot of payments by DRG code
+#' Boxplot_Pay_DRG
+#' This function produces a boxplot of specific payments by DRG code
 #' Make it an option for your function to do this for either the average Medicare payments,
 #' the average total payment, or the average covered charges
 #'
-#' @param
-#' @return A boxplot of specific payments by DRG code
+#' @param data a data frame
+#' @param payment_type a string name for variable y in the dataframe data
+#'
+#' @return A boxplot of specific \code{payment_type} by DRG code from the \code{data}
+#'
 #' @importFrom ggplot2 ggplot
 #' @importFrom ggplot2 geom_boxplot
 #' @export
 #'
 #' @examples
-#' boxplot_pay_DRG(DRG_data, 'Average Total Payment')
+#'
+#' Boxplot_Pay_DRG(DRG_data, 'Average Total Payment')
 #' DRG_data$DRG.Code <- substr(DRG_data$DRG.Definition, 1, 3)
-#' boxplot_pay_DRG(DRG_data, 'Average Total Payment')
+#' Boxplot_Pay_DRG(DRG_data, 'Average Total Payment')
 #'
 #'
 
 
 # Function to create a boxplot of the specific payments by DRG code
-boxplot_pay_DRG <- function(data, payment_type) {
+Boxplot_Pay_DRG <- function(data, payment_type) {
   # Check the payment type
   if (payment_type == "Average Medicare Payment") {
     title <- "Boxplot of Average Medicare Payment by DRG Code"
@@ -40,7 +44,7 @@ boxplot_pay_DRG <- function(data, payment_type) {
 
   # Create the boxplot
   ggplot(data, aes(x = .data[["DRG.Code"]], y = .data[[y_variable]])) +
-    geom_boxplot(fill="lightblue") +
+    geom_boxplot(fill="navyblue") +
     labs(
       x="DRG Code",
       y=payment_type,

@@ -3,8 +3,9 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: Xintong Cao, Yuxiang Ren, Yijia Sun
-Maintainer: The package maintainer <yur4003@med.cornell.edu>
-Description: This package includes 2 functions. The function1 makes  a boxplot of payments by DRG code.
+Maintainer: <xic4009@med.cornell.edu>, <yur4003@med.cornell.edu>
+Description: This package includes 2 functions. 
+    The function1 makes a boxplot of specific payment by DRG code.
     The function2 calculates statistics over all of the DRG codes for average Medicare payments.
     The package contains a database include hospital-specific charges for more than 3,000 U.S. hospitals that receive Medicare Inpatient Prospective Payment System (IPPS) payments for Fiscal Year (FY) 2011
 License: What license is it under?
