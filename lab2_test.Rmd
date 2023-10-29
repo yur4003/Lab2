@@ -25,8 +25,9 @@ library(Lab2)
 ```{r}
 # View(DRG_data)
 # Test function1
-function1()
+# function1()
 # Test function2
-function2()
+data("DRG_data")
+function2("mean")
 ```
 
