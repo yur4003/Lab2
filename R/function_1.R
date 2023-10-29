@@ -15,15 +15,14 @@
 #'
 #' @examples
 #'
-#' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
-#' DRG_data$DRG.Code <- substr(DRG_data$DRG.Definition, 1, 3)
+
 #' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
 #'
 #'
 
-
+library(ggplot2)
 # Function to create a boxplot of the specific payments by DRG code
 Boxplot_Pay_DRG <- function(data, payment_type) {
   # Check the payment type
@@ -39,11 +38,7 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
   } else {
     stop("Invalid payment type. Please choose one of: 'Average Medicare Payments', 'Average Total Payments', or 'Average Covered Charges'")
   }
-  # Check the DRG code
-  if(!(all(c("DRG.Code") %in% names(data)))){
-    stop("Invalid data set. Please choose a dataset containing 'DRG.Code'.")
-  }
-
+  data$DRG.Code <- substr(data$DRG.Definition, 1, 3)
   # Create the boxplot
   ggplot(data, aes(x = .data[["DRG.Code"]], y = .data[[y_variable]])) +
     geom_boxplot(fill="lightblue") +
@@ -63,3 +58,4 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
       plot.title = element_text(size = 14, hjust = 0.5),
     )
 }
+
