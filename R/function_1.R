@@ -46,7 +46,7 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
 
   # Create the boxplot
   ggplot(data, aes(x = .data[["DRG.Code"]], y = .data[[y_variable]])) +
-    geom_boxplot(fill="navyblue") +
+    geom_boxplot(fill="lightblue") +
     labs(
       x="DRG Code",
       y=payment_type,
