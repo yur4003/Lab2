@@ -18,6 +18,7 @@ install('Lab2')
 ```
 ```{r}
 library(Lab2)
+library(ggplot2)
 ```
 
 ```{r}
@@ -31,7 +32,12 @@ head(DRG_data,5)
 ```{r}
 # Test function_1
 df <- DRG_data
-boxplot_pay_DRG(df,'Average Total Payments')
+df
+```
+```{r}
+# test function1
+
+Boxplot_Pay_DRG(df,"Average Total Payments")
 ```
 
 ```{r}
