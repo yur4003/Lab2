@@ -38,6 +38,7 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
   } else {
     stop("Invalid payment type. Please choose one of: 'Average Medicare Payments', 'Average Total Payments', or 'Average Covered Charges'")
   }
+  # Creating a DRG.Code column
   data$DRG.Code <- substr(data$DRG.Definition, 1, 3)
   # Create the boxplot
   ggplot(data, aes(x = .data[["DRG.Code"]], y = .data[[y_variable]])) +
