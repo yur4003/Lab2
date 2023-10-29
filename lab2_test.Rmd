@@ -1,20 +1,17 @@
 ---
 title: "lab2_test"
-author: "Yuxiang Ren"
+author: "Yijia Sun, Yuxiang Ren, Xintong Cao"
 date: "10/29/2023"
 output: html_document
 ---
-
+Github Links：
+https://github.com/yur4003/Lab2.git
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r}
-library(devtools)
-library(roxygen2)
-```
 
-```{r,message=FALSE}
 
+```{r,message=FALSE,warning=FALSE}
 setwd('..') 
 install('Lab2')
 ```
@@ -23,12 +20,19 @@ library(Lab2)
 ```
 
 ```{r}
-# View(DRG_data)
-# Test function1
-# function1()
-# Test function2
+# Test data set included
 data("DRG_data")
+head(DRG_data,5)
+```
+
+```{r}
+# Test function_1
+```
+
+```{r}
+# Test function_2
 function_2("mean")
 function_2("median")
+function_2("standard deviation")
 ```
 
