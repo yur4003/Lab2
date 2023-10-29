@@ -18,7 +18,7 @@
 #' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
 #' DRG_data$DRG.Code <- substr(DRG_data$DRG.Definition, 1, 3)
 #' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
-#' Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments)
+#' Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
 #'
 #'
@@ -35,7 +35,7 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
     y_variable <- "Average.Total.Payments"
   } else if (payment_type == "Average Covered Charges") {
     title <- "Boxplot of Average Covered Charges by DRG Code"
-    y_variable <- "Average.Covered.Payments"
+    y_variable <- "Average.Covered.Charges"
   } else {
     stop("Invalid payment type. Please choose one of: 'Average Medicare Payments', 'Average Total Payments', or 'Average Covered Charges'")
   }
