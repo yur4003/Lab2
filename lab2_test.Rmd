@@ -25,9 +25,14 @@ library(Lab2)
 data("DRG_data")
 head(DRG_data,5)
 ```
+```{r}
+DRG_data
+```
 
 ```{r}
 # Test function_1
+df <- DRG_data
+boxplot_pay_DRG(df,'Average Total Payment')
 ```
 
 ```{r}
