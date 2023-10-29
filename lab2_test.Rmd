@@ -34,8 +34,11 @@ head(DRG_data,5)
 
 ```{r}
 # test function1
-df <- DRG_data
+
 Boxplot_Pay_DRG(DRG_data,"Average Total Payments")
+
+Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
+Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
 ```
 
 ```{r}
