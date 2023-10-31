@@ -23,10 +23,9 @@ library(Lab2)
 ```
 
 ```{r}
-# Test data set included
+# Test data set included in the package
 data("DRG_data")
 head(DRG_data,5)
-DRG_data
 ```
 
 
@@ -34,7 +33,7 @@ DRG_data
 
 
 ```{r}
-# test function1
+# Test for function1
 
 Boxplot_Pay_DRG(DRG_data,"Average Total Payments")
 
