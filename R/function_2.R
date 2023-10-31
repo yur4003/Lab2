@@ -9,18 +9,17 @@
 #' @examples
 
 library(tidyverse)
+library(ggplot2)
 
-load("~/Desktop/wcm_term1/DS1/Lab2/data/DRG_data.RData")
-
-function_2<-function(x){
-  if(x=="mean"){
-    mean <- round(mean(DRG_data$Average.Medicare.Payments), 2)
+function_2 <- function(x, data){
+  if(x == "mean"){
+    mean <- round(mean(data$Average_Medicare_Payments), 2)
     print(paste("The mean of average Medicare payments is", mean))
   } else if(x == "median"){
-    median <- round(median(DRG_data$Average.Medicare.Payments), 2)
+    median <- round(median(data$Average_Medicare_Payments), 2)
     print(paste("The median of average Medicare payments is", median))
   } else if(x == "standard deviation"){
-    sd <- round(sd(DRG_data$Average.Medicare.Payments), 2)
+    sd <- round(sd(data$Average_Medicare_Payments), 2)
     print(paste("The standard deviation of average Medicare payments is", sd))
   } else print("Invalid input, you must choose from mean, median and standard deviation ")
 }
