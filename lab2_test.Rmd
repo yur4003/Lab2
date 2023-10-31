@@ -26,6 +26,7 @@ library(Lab2)
 # Test data set included
 data("DRG_data")
 head(DRG_data,5)
+DRG_data
 ```
 
 
