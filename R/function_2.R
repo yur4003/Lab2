@@ -1,15 +1,19 @@
 
 #' Function_2
-#' @export
-#' Calculates statistics over all of the DRG codes for average Medicare payments.
-#' Make it an option  to calculate either the mean, median,
-#' or standard deviation of the DRG codes.
+#' This function calculates statistics over all of the DRG codes for average Medicare payments.
+#' Make it an option  to calculate either the mean, median, or standard deviation of the DRG codes.
+#'
+#' @param data a data frame
 #' @param x a string from c("mean","median","standard deviation")
-#' @importFrom
+#' @importFrom tidyverse
+#' @export
 #' @examples
+#'
+#' mean(data$`Average Medicare Payments`)
+#' median(data$`Average Medicare Payments`)
+#' sd(data$`Average Medicare Payments`)
 
 library(tidyverse)
-library(ggplot2)
 
 function_2 <- function(x, data){
   if(x == "mean"){
