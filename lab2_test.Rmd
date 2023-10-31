@@ -44,8 +44,8 @@ Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
 
 ```{r}
 # Test function_2
-function_2("mean")
-function_2("median")
-function_2("standard deviation")
+function_2("mean",DRG_data)
+function_2("median",DRG_data)
+function_2("standard deviation",DRG_data)
 ```
 

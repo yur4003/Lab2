@@ -13,13 +13,13 @@ library(ggplot2)
 
 function_2 <- function(x, data){
   if(x == "mean"){
-    mean <- round(mean(data$Average_Medicare_Payments), 2)
+    mean <- round(mean(data$`Average Medicare Payments`), 2)
     print(paste("The mean of average Medicare payments is", mean))
   } else if(x == "median"){
-    median <- round(median(data$Average_Medicare_Payments), 2)
+    median <- round(median(data$`Average Medicare Payments`), 2)
     print(paste("The median of average Medicare payments is", median))
   } else if(x == "standard deviation"){
-    sd <- round(sd(data$Average_Medicare_Payments), 2)
+    sd <- round(sd(data$`Average Medicare Payments`), 2)
     print(paste("The standard deviation of average Medicare payments is", sd))
   } else print("Invalid input, you must choose from mean, median and standard deviation ")
 }
