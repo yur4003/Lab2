@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r,message=FALSE,warning=FALSE}
 library(devtools)
-setwd('..') 
-install('Lab2')
+install_github('yur4003/Lab2')
 ```
+
 ```{r,message=FALSE,warning=FALSE}
 library(Lab2)
 ```
