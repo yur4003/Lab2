@@ -170,6 +170,9 @@ pre code {
 
 
 <p>Github Links： <a href="https://github.com/yur4003/Lab2.git" class="uri">https://github.com/yur4003/Lab2.git</a></p>
+<pre class="r"><code>library(devtools)
+setwd(&#39;..&#39;) 
+install(&#39;Lab2&#39;)</code></pre>
 <pre><code>## 
 ## ── R CMD build ─────────────────────────────────────────────────────────────────
 ## * checking for file ‘/Users/JasonRen.584/Desktop/wcm_term1/DS1/Lab2/DESCRIPTION’ ... OK
@@ -185,7 +188,7 @@ pre code {
 ## * building ‘Lab2_0.1.0.tar.gz’
 ## 
 ## Running /Library/Frameworks/R.framework/Resources/bin/R CMD INSTALL \
-##   /var/folders/n0/2tyv14d510lcdrv5bxggdhfh0000gp/T//RtmpiPZ0Om/Lab2_0.1.0.tar.gz \
+##   /var/folders/n0/2tyv14d510lcdrv5bxggdhfh0000gp/T//Rtmp3ZP0DQ/Lab2_0.1.0.tar.gz \
 ##   --install-tests 
 ## * installing to library ‘/Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library’
 ## * installing *source* package ‘Lab2’ ...
@@ -201,8 +204,8 @@ pre code {
 ## ** testing if installed package can be loaded from final location
 ## ** testing if installed package keeps a record of temporary installation path
 ## * DONE (Lab2)</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(Lab2)</code></pre>
+<pre class="r"><code>library(Lab2)
+library(ggplot2)</code></pre>
 <pre class="r"><code># Test data set included in the package
 data(&quot;DRG_data&quot;)
 head(DRG_data,5)</code></pre>
