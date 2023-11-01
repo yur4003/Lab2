@@ -1,4 +1,3 @@
-# Function1
 #' Boxplot_Pay_DRG
 #' This function produces a boxplot of specific payments by DRG code
 #' Make it an option for your function to do this for either the average Medicare payments,
@@ -20,8 +19,6 @@
 #' Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
 #'
 #'
-
-
 # Function to create a boxplot of the specific payments by DRG code
 Boxplot_Pay_DRG <- function(data, payment_type) {
   library(ggplot2)
