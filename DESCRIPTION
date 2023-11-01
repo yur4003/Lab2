@@ -3,7 +3,7 @@ Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
 Author: Xintong Cao, Yuxiang Ren, Yijia Sun
-Maintainer: <xic4009@med.cornell.edu>, <yur4003@med.cornell.edu>
+Maintainer: <xic4009@med.cornell.edu>, <yur4003@med.cornell.edu>, <yis4004@med.cornell.edu>
 Description: This package includes 2 functions. 
     The function1 makes a boxplot of specific payment by DRG code.
     The function2 calculates statistics over all of the DRG codes for average Medicare payments.
