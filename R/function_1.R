@@ -1,4 +1,5 @@
 #' Boxplot_Pay_DRG
+#'
 #' This function produces a boxplot of specific payments by DRG code
 #' Make it an option for your function to do this for either the average Medicare payments,
 #' the average total payment, or the average covered charges
@@ -13,7 +14,7 @@
 #' @export
 #'
 #' @examples
-
+#'
 #' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')

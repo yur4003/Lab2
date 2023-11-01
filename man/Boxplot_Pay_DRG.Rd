@@ -2,10 +2,7 @@
 % Please edit documentation in R/function_1.R
 \name{Boxplot_Pay_DRG}
 \alias{Boxplot_Pay_DRG}
-\title{Boxplot_Pay_DRG
-This function produces a boxplot of specific payments by DRG code
-Make it an option for your function to do this for either the average Medicare payments,
-the average total payment, or the average covered charges}
+\title{Boxplot_Pay_DRG}
 \usage{
 Boxplot_Pay_DRG(data, payment_type)
 }
@@ -18,12 +15,12 @@ Boxplot_Pay_DRG(data, payment_type)
 A boxplot of specific \code{payment_type} by DRG code from the \code{data}
 }
 \description{
-Boxplot_Pay_DRG
 This function produces a boxplot of specific payments by DRG code
 Make it an option for your function to do this for either the average Medicare payments,
 the average total payment, or the average covered charges
 }
 \examples{
+
 Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
 Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
 Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')

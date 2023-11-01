@@ -1,4 +1,5 @@
 #' Function_2
+#'
 #' This function calculates statistics over all of the DRG codes for average Medicare payments.
 #' Make it an option  to calculate either the mean, median, or standard deviation of the DRG codes.
 #'
@@ -8,9 +9,9 @@
 #' @export
 #' @examples
 #'
-#' mean(data$`Average Medicare Payments`)
-#' median(data$`Average Medicare Payments`)
-#' sd(data$`Average Medicare Payments`)
+#' function_2("mean", DRG_data)
+#' function_2("median", DRG_data)
+#' function_2("standard deviation", DRG_data)
 
 function_2 <- function(x, data) {
   if (x == "mean") {
