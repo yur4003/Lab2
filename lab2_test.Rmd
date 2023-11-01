@@ -11,18 +11,19 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r,message=FALSE,warning=FALSE,echo=FALSE}
+```{r,message=FALSE,warning=FALSE}
 library(devtools)
 setwd('..') 
 install('Lab2')
 ```
-```{r}
-library(ggplot2)
+```{r,message=FALSE,warning=FALSE}
 library(Lab2)
+library(ggplot2)
+
 
 ```
 
-```{r}
+```{r,message=FALSE,warning=FALSE}
 # Test data set included in the package
 data("DRG_data")
 head(DRG_data,5)
