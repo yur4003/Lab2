@@ -6,39 +6,38 @@ output: html_document
 ---
 Github Links：
 https://github.com/yur4003/Lab2.git
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-```{r,message=FALSE,warning=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(devtools)
-install_github('yur4003/Lab2')
+install_github("yur4003/Lab2")
 ```
 
-```{r,message=FALSE,warning=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(Lab2)
 ```
 
-```{r,message=FALSE,warning=FALSE}
+```{r, message=FALSE, warning=FALSE}
 # Test data set included in the package
 data("DRG_data")
-head(DRG_data,5)
+head(DRG_data, 5)
 ```
 
 
 ```{r, fig.dim=c(10,6)}
 # Test for function1
-Boxplot_Pay_DRG(DRG_data,"Average Total Payments")
+Boxplot_Pay_DRG(DRG_data, "Average Total Payments")
 
-Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
-Boxplot_Pay_DRG(DRG_data, 'Average Covered Charges')
+Boxplot_Pay_DRG(DRG_data, "Average Medicare Payments")
+Boxplot_Pay_DRG(DRG_data, "Average Covered Charges")
 ```
 
 ```{r}
 # Test function_2
-function_2("mean",DRG_data)
-function_2("median",DRG_data)
-function_2("standard deviation",DRG_data)
+function_2("mean", DRG_data)
+function_2("median", DRG_data)
+function_2("standard deviation", DRG_data)
 ```
-

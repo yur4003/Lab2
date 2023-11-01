@@ -14,7 +14,6 @@
 #' @export
 #'
 #' @examples
-#'
 
 #' Boxplot_Pay_DRG(DRG_data, 'Average Total Payments')
 #' Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')
@@ -43,11 +42,11 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
   data$DRG.Code <- substr(data$`DRG Definition`, 1, 3)
   # Create the boxplot
   ggplot(data, aes(x = .data[["DRG.Code"]], y = .data[[y_variable]])) +
-    geom_boxplot(fill="lightblue") +
+    geom_boxplot(fill = "lightblue") +
     labs(
-      x="DRG Code",
-      y=payment_type,
-      title=title
+      x = "DRG Code",
+      y = payment_type,
+      title = title
     ) +
     theme_minimal() +
     theme(
@@ -57,7 +56,6 @@ Boxplot_Pay_DRG <- function(data, payment_type) {
       # Adjust the text size of the titles of axes
       axis.title = element_text(size = 12),
       # Adjust the size and position of title
-      plot.title = element_text(size = 14, hjust = 0.5),
+      plot.title = element_text(size = 14, hjust = 0.5)
     )
 }
-
