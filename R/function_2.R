@@ -13,7 +13,6 @@
 #' median(data$`Average Medicare Payments`)
 #' sd(data$`Average Medicare Payments`)
 
-library(tidyverse)
 
 function_2 <- function(x, data){
   if(x == "mean"){

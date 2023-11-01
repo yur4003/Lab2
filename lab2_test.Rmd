@@ -18,9 +18,6 @@ install('Lab2')
 ```
 ```{r,message=FALSE,warning=FALSE}
 library(Lab2)
-library(ggplot2)
-
-
 ```
 
 ```{r,message=FALSE,warning=FALSE}
@@ -30,12 +27,8 @@ head(DRG_data,5)
 ```
 
 
-
-
-
-```{r}
+```{r, fig.dim=c(10,6)}
 # Test for function1
-
 Boxplot_Pay_DRG(DRG_data,"Average Total Payments")
 
 Boxplot_Pay_DRG(DRG_data, 'Average Medicare Payments')

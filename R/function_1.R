@@ -22,9 +22,10 @@
 #'
 #'
 
-library(ggplot2)
+
 # Function to create a boxplot of the specific payments by DRG code
 Boxplot_Pay_DRG <- function(data, payment_type) {
+  library(ggplot2)
   # Check the payment type
   if (payment_type == "Average Medicare Payments") {
     title <- "Boxplot of Average Medicare Payments by DRG Code"
